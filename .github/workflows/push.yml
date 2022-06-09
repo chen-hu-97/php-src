@@ -54,11 +54,6 @@ jobs:
         uses: ./.github/actions/install-linux
       - name: Setup
         uses: ./.github/actions/setup-x64
-      - name: Test
-        uses: ./.github/actions/test-linux
-        with:
-          runTestsParameters: >-
-            ${{ matrix.run_tests_parameters }}
       - name: Test Tracing JIT
         uses: ./.github/actions/test-linux
         with:
